@@ -4,11 +4,13 @@ Native Trainer VI, for Grand Theft Auto VI.
 
 Native Trainer VI is the trainer menu for [ScriptHookVI](https://github.com/jamubc/ScriptHookVI): a set of Lua scripts that ScriptHookVI loads.
 
+Documentation: https://docs.page/jamubc/ScriptHookVI
+
 ![The Native Trainer VI main menu, rendered with no game running](docs/menu.png)
 
 ## Installation
 
-1. Build ScriptHookVI and install it into its `bin/` folder, as its `docs/getting-started.mdx` describes.
+1. Build ScriptHookVI and install it into its `bin/` folder, as [Install and run](https://docs.page/jamubc/ScriptHookVI/getting-started) describes.
 2. Copy this repository into ScriptHookVI's scripts folder. `<ScriptHookVI>` is the root of your ScriptHookVI checkout:
 
    ```bash
@@ -35,6 +37,8 @@ Eleven Lua files that build one menu:
 - A capability system that dims every item that cannot work and shows the reason.
 - Debug tools for the process ScriptHookVI is attached to: a memory viewer, a pattern scan, signatures, a pointer chain, the list of loaded scripts and the log.
 - Settings for the menu's colour, position, size, keys and status line.
+
+The menus are built with ScriptHookVI's menu library; its docs cover [menus](https://docs.page/jamubc/ScriptHookVI/menus) and the [Lua API](https://docs.page/jamubc/ScriptHookVI/lua-api).
 
 This repository contains no data about any game. Most items are placeholders that are always dimmed. Outside the Debug memory tools, the items that read or change a game call a `world` library, native tables and a type registry that neither this repository nor ScriptHookVI contains, so with ScriptHookVI as published they are dimmed with the reason or do nothing.
 
